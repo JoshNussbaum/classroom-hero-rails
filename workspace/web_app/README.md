@@ -1,3 +1,0 @@
-Classroom Hero Application
-
-
