@@ -1,12 +1,33 @@
+<% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home | Classroom Hero Tool For Teachers</title>
+        <title><%= yield(:title) %> | Classroom Hero Tool For Teachers</title>
+        <%= stylesheet_link_tag 'application', media: 'all',
+                                           'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+        <!--[if lt IE 9]>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+          </script>
+        <![endif]-->
+    
     </head>
     <body>
-        <h1>Home</h1>
-        <p>
-            Classroom Hero Home Page
-        </p>
+        <header class="navbar navbar-fixed-top navbar-inverse">
+          <div class="container">
+            <%= link_to "Classroom Hero", '#', id: "logo" %>
+            <nav>
+              <ul class="nav navbar-nav pull-right">
+                <li><%= link_to "Home",   '#' %></li>
+                <li><%= link_to "Help",   '#' %></li>
+                <li><%= link_to "Log in", '#' %></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="container">
+          <%= yield %>
+        </div>
     </body>
 </html>
