@@ -3,7 +3,7 @@ require 'test_helper'
 class PagesControllerTest < ActionController::TestCase
   
   def setup
-    @base_title = "Classroom Hero Tool For Teachers"
+    @base_title = "Classroom Hero"
   end
   
   test "should get home" do
