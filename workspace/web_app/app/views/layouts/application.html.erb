@@ -10,12 +10,8 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <header class="splash">
-      <div class="container">
-        <%= yield %>
-        <%= render 'layouts/footer' %>
-      </div>
-    </header>
- 
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+
   </body>
 </html>
