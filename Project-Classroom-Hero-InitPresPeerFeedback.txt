@@ -1,0 +1,132 @@
+"Don't have beverages while giving a presentation. It looks really bad."
+"Good presentation layout and idea. Contained all the required topics.However, the project seems a little too easy if all they're doing is designing the layout/interaction  for the website."
+"You had all the content you needed.
+Your presentation made your project ideas clear to me.
+The presentation was delivered well.
+The project seems to be of an appropriate difficulty."
+"Content: Format matched slide examples.
+Clarity: Audible.
+Delivery: You know your stuff.
+Feasible:  Very helpful concept for teacher/students."
+"Good delivery, save for the aerobics. Covered all topics."
+"I WANT BE HERO"
+"Great idea - although not necessarily innovative. Is definitely feasible. Depending on how much work goes into it, it could be really great. Only thing is that it could be slightly too easy considering they just need a front end. The interactive tutorual push it to the reritory where it's not easy. Depending on how far they get, it's a good project."
+"Boring; no, dreadful idea. Remember not very long ago when we were in the grade school? And teachers always have the dreadful computer things that one must click through. Or if you have younger siblings, observe their school assignments. Feasibility: okay."
+"Website front-end
+Doable, but more than just redesigning a website would be nice."
+"From what I got, the idea is to re-vamp Classroom Hero (website) in order to be more user-friendly and draw more users. Seems like there hasn't been much preparation for this presentation, the sprints are there but the "how" doesn't seem to be there. Good presentation, just a lack of preparation."
+"App for teachers and students, if implemented well, could be useful.  Good presentation."
+"Nice.. idea.. for.. classrooms, but seems like it'd be a time sink for teachers"
+"Do you know what database you will be using to store the images/videos?"
+"rebuilding the startup's website/creating a launchpage.
+
+not enough of a project for one quarter?"
+"This seems like a pretty easy project but I'm glad it is something actually meaningful."
+"Very nice pre-existing product. Good to see real work happening with a real world impact."
+"This would be useful. Your presentation was very clear. Good work."
+"It is a clear presentation. Feasibility is high since it is already a running website."
+"Wasn't too sure what the project was about except it's for teachers to use in an elementary school environment."
+"Seemed like they knew what they were doing."
+"They did everything well and their presentation looked good."
+"your name suggests copy right infringement. otherwise, interesting...."
+"The idea was a bit unclear. I know what they are doing, but why are they doing it? They had all required information and, from what I understood, the idea seems doable."
+"All the presentation requirements were met. 
+
+A startup that has good potential. Good luck.Ruby on Rails is way to go for web sites"
+"Very interesting presentation since the project has already been started by the project owner.
+
+The presentation was clear and the idea is great.
+
+Students will benefit from this tool if it is fun and easy to use."
+"The idea for an app to motivate children to learn is a great idea. Seemed like this project was the most thought out and ready for production."
+"Cool idea. I'm interested to see what your site will look like."
+"I think it is cool that you guy already have a startup for this and I wish you luck on the overall website over haul. Doable"
+"It was not made clear what their educational site will contain, only that it's currently in progress. Their presentation did not offer a lot of information on the product, only on its current success."
+"Neat idea. Could have used a bit more explaining what you planned to do with the website. All you explained was that you were going to make a website because the previous one didn't look good."
+"Nice presentation.  Hope the outreach stuff goes well.  Sounds like a doable and scaleable project."
+"This project is a website that motivates children to engage in learning. They are rebuilding a website to make it more functional and interactive. I think this is useful and fun project to do. This presentation has a very good user stories and very well organize. The speaker is very interesting in this project which helps the audience understands this project a lot more. This project is doable."
+"Content
+Yes, everything that was required was present.
+Clarity
+Good.
+Delivery
+Good.
+Feasibility
+Too easy?"
+"Good concept, motivate children to learn"
+"I think it's neat you're working on a real world project. I think it might be scoped a little on the easier side, but I didn't have a clear idea about what features you were planning to implement or the web experience of the team."
+"clear presentation, well made slides, sprint plans make sense, project is feasible."
+"I like the idea, i can use something like that too."
+"Very good presentation. They presented everything to the point and had solid sprints."
+"Content: Did the presentation address all salient topics?
+Yes.
+Clarity: Could you tell somebody else what the project was about?
+Yes. They are making the front end to a website for teachers to help to motivate kids in the classroom to engage in learning. Their goal is to make a polished website complete with tutorials and cost and benefits. 
+Delivery: Audible? Intelligible? Engaging?
+Yes.
+Feasible? 
+I can‰Ûªt tell what their exact goals are besides remaking the website. If they are only remaking the website, that does not seem like an ambitious enough goal for this class. So I am assuming they did not share all their goals."
+"Their project was very interesting. It was one of the better presentations. The release plans were good and the presentation was very audible. I think the release plans and story are good."
+"Good, succinct powerpoint."
+"It was great knowing that this product is already out their, and you guys are making it better. Its nice seeing an actually useful product hit the market, unlike some useless ideas which get millions in venture funding."
+"Pretty sweet that this project is already being used by teachers."
+"Well-organized presentation, but the project might be a bit easy."
+"Mentioned you already have a backend in place so not sure if just building a front end will be enough to keep you occupied for the quarter, but if you keep adding features it's possible."
+"Good idea. This project can benefit many teachers and students in learning."
+"If you are just implementing a website for an existing product, I'm not sure that this fits the scope of the class."
+"Honestly, this project just sounds like you are giving a previous app a minor facelift. Hopefully when you present at the end it will be a completely new ui at least."
+"Presented all their content is a clear way. Good delivery and project seems feasible."
+"This is going to be difficult to monetize, since there are so many free options out there.  Good luck"
+"Cool idea for a project."
+"Cool idea, seems like a lot is already done? I am interested in seeing the progress."
+"my team"
+"Your presentation was good, but the slides could have provided more information."
+"What I got from the presentation was that you're doing improvements on the website. Am rather unsure of what kind however."
+"Yes, the team addressed all of the salient topics. Based on the clarity, I could tell somebody else what the project is about. The delivery was audible, and intelligible. The feasibility of the project is doable and not too easy, and not too ambitious."
+"Very cool that this in something you've already worked on and have customers for. I really like that it is a product for helping in school. Hope it goes well!"
+"Content (10 - 1) 10 = Awesome, 1 = No Content
+Clarity (10 - 1) 10 = I Understand what you are doing, 1 = huh?
+Delivery(10 - 1) 10 = I can listen to you all day, 1 = Zzzz.
+
+Content: 10
+Clarity : 10
+Delivery: 10
+Seems a little on the easy side if site has already been built"
+"Sounds good for teachers and like a lot of work because it's based on having a good interactive experience. Was presented well."
+"Decent presentation with an okay project idea."
+"UI for motivational app for teachers 
+Going to implement a polished functional website.
+Sprint #1: Learn RoR. Create layout for index page and host it locally. Add images and videos.
+Sprint #2: Interactive sign up tutorial and informational tutorials on how to use app
+Sprint #3: Set up teacher home page, add edit account settings, add statistical readouts
+
+Clarity
+Know what their task are, but not really what their product does.
+
+Delivery
+Delivery is good."
+"Slides had WAY to much info on them, and the presenter did not do a very good job of getting the information across to me."
+"doesn't this project already exist, project seems lack luster. presentation was ok"
+"I really like this idea. I wonder though, how it measures the students. Seems do-able."
+"Members: Present
+Summary: Present
+Goals: Present
+Stories: Present
+Clarity: Good
+Delivery: Good
+Feasibility: Good"
+"This project could go in a lot of different directions, and I'm interested to see where the group takes it. They seem organized and should have an interesting final product."
+"Good presentation, a little unclear of what the purpose of the website was, though good presentation of the sprints."
+"Solid presentation, very cool project/product. Interested in seeing where it goes!"
+"Scope seems flexible and appropriate
+Good description
+Good introduction
+Consistently spoke clearly
+Small team?"
+"I was left unsure of what the app does. Perhaps an explanation of the app could precede an explanation of what the web interface will be/ what it needs in order to utilize the functionality of the app. What I got from the presentation was that one guy has already made something, it helps teachers, and you're building a website that's somehow related."
+"I think rails would be perfect for this project. This could really help teachers and students."
+"Nice presentation, I liked your idea."
+"educate the future, man."
+"Great, covered everything that was required of the presentation."
+"#NAME?"
+"Cool project, I would like to see it positively impact learning for kids"
