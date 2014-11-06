@@ -32,7 +32,8 @@ header.splash {
     background-position: center center;
     background-repeat: none;
     background-size:cover;
-    height: 600px;
+    min-height: 620px;
+    height: 100vh;
     
 }
 
@@ -68,6 +69,8 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  width: 75vw;
+  margin: 0 auto;
 }
 
 h2 {
@@ -78,6 +81,9 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: black;
+  width: 75vw;
+  margin: 0 auto;
+  line-height: 2;
 
 }
 
@@ -132,7 +138,7 @@ footer {
     li {
       color: white;
       float: right;
-      margin-left: 15px;
+      margin-right: 15px;
       font-size: 20px;
     }
   }
