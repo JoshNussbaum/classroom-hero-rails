@@ -1,10 +1,16 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
+    <%= javascript_include_tag "application" %>
     <head>
         <title><%= yield(:title) %> | Classroom Hero</title>
     </head>
     <body>
+    
+    <div class="how-it-works-panel"style="display:none">How it works goes here
+         
+        
+    </div>
     <header class="splash">
         <div class="center jumbotron">
               <h1>Classroom Hero is a fun and interactive token economy</h1><br>
@@ -13,7 +19,7 @@
                 <a href="http://beta.snowshoestamp.com/">SnowShoe Stamps</a>, Classroom Hero instantly creates powerful teacher-student interactions
               </h2><br>
     
-              <%= link_to "How it works", '#', class: "btn btn-lg btn-primary" %>
+              <a class="btn btn-lg btn-primary" id="how-it-works-btn">How it works</a>
         </div>
         </header>
     </body>

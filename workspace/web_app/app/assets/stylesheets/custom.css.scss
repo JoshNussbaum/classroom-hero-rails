@@ -37,6 +37,12 @@ header.splash {
     
 }
 
+div.how-it-works-panel{
+    top: -592px;
+    background-size: cover;
+    background-color: blue;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-bottom: 300px;
