@@ -1,5 +1,5 @@
-@import "bootstrap";
 @import "bootstrap-sprockets";
+@import "bootstrap";
 @import "bootstrap-modal";
 
 /* mixins, variables, etc. */
@@ -75,6 +75,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-size: 30px;
   width: 75vw;
   margin: 0 auto;
 }
@@ -127,6 +128,17 @@ p {
     color: white;
     text-decoration: none;
   }
+}
+
+/* carousel */
+.carousel-caption{
+    position:static;
+    background-size:cover;
+    min-height: 30vh;
+}
+
+.carousel-control.left, .carousel-control.right{ 
+  background: none !important; 
 }
 
 /* footer */
