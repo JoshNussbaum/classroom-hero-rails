@@ -12,14 +12,18 @@
         </button>
         
         <div class="btn-group">
-            <button id ="helpButton" type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Help <span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="helpButton">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+            <button id ="otherButton" type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Other <span class="caret"></span></button>
+            <ul class="dropdown-menu" aria-labelledby="otherButton">
+                <li><%= link_to "Help", help_path %></li>
+                <li><%= link_to "About", about_path %></li>
+                <li><%= link_to "Contact", contact_path %></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
             </ul>
         </div>
+        
+        <button type="button" class="btn btn-link" style="outline:none">
+          My Account
+        </button>
       </ul>
     </nav>
     

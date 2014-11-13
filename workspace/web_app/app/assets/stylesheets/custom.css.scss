@@ -68,15 +68,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+
 h1 {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
-  width: 75vw;
+  width: 72vw;
   margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: black;
-  width: 75vw;
+  width: 65vw;
   margin: 0 auto;
   line-height: 2;
 
@@ -107,6 +107,9 @@ p {
    top: +7px;
 }
 
+.modal-backdrop {
+  background: none;
+}
  
 .modal-body input{
    margin: 0 auto;
