@@ -25,3 +25,13 @@ $(function() {
     }
   });
 });
+
+$("#signInModal").modal({
+    backdrop: false,
+    show: false
+});
+
+$("#signUpModal").modal({
+    backdrop: false,
+    show: false
+});

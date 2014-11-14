@@ -24,6 +24,7 @@ section {
   background-color:transparent;
 }
 
+
 header.splash {
     text-align: center;
     color: #fff;
@@ -48,8 +49,6 @@ div.how-it-works-panel{
         padding-bottom: 300px;
     }
 }
-
-
 
 textarea {
   resize: vertical;
@@ -106,15 +105,14 @@ p {
    position: relative;
    top: +7px;
 }
-
-.modal-backdrop {
-  background: none;
-}
  
 .modal-body input{
    margin: 0 auto;
- }
- 
+}
+
+
+.modal-backdrop, .modal-backdrop.fade.in { background-color: rgba(0,0,0,0); }
+
 
 
 #logo {
@@ -134,6 +132,7 @@ p {
 }
 
 /* carousel */
+
 .carousel-caption{
     position:static;
     background-size:cover;
