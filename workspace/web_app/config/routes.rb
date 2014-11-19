@@ -1,5 +1,29 @@
 Rails.application.routes.draw do
   
+  resources :users
+
+  resources :sold_items
+
+  resources :schools
+
+  resources :leagues
+
+  resources :items
+
+  resources :earned_points
+
+  resources :class_jars
+
+  resources :classrooms
+
+  resources :category_codes
+
+  resources :student_class_matches
+
+  resources :student_users
+
+  resources :teacher_users
+
   root 'pages#home'
   get 'help' => 'pages#help'
   get 'about' => 'pages#about'

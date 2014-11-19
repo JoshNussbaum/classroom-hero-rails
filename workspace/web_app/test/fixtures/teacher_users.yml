@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coins: 1
+  leagueId: 1
+  hasStamps: false
+
+two:
+  coins: 1
+  leagueId: 1
+  hasStamps: false

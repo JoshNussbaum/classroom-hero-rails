@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leagueName: MyString
+  hasStamps: false
+  leagueAdmin: 
+  private: false
+
+two:
+  leagueName: MyString
+  hasStamps: false
+  leagueAdmin: 
+  private: false

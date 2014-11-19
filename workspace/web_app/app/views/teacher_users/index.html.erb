@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Teacher Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Coins</th>
+      <th>Leagueid</th>
+      <th>Hasstamps</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teacher_users.each do |teacher_user| %>
+      <tr>
+        <td><%= teacher_user.coins %></td>
+        <td><%= teacher_user.leagueId %></td>
+        <td><%= teacher_user.hasStamps %></td>
+        <td><%= link_to 'Show', teacher_user %></td>
+        <td><%= link_to 'Edit', edit_teacher_user_path(teacher_user) %></td>
+        <td><%= link_to 'Destroy', teacher_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teacher user', new_teacher_user_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sid:</strong>
+  <%= @student_class_match.sid %>
+</p>
+
+<p>
+  <strong>Cid:</strong>
+  <%= @student_class_match.cid %>
+</p>
+
+<%= link_to 'Edit', edit_student_class_match_path(@student_class_match) %> |
+<%= link_to 'Back', student_class_matches_path %>

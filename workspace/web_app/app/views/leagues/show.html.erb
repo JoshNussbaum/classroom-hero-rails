@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Leaguename:</strong>
+  <%= @league.leagueName %>
+</p>
+
+<p>
+  <strong>Hasstamps:</strong>
+  <%= @league.hasStamps %>
+</p>
+
+<p>
+  <strong>Leagueadmin:</strong>
+  <%= @league.leagueAdmin %>
+</p>
+
+<p>
+  <strong>Private:</strong>
+  <%= @league.private %>
+</p>
+
+<%= link_to 'Edit', edit_league_path(@league) %> |
+<%= link_to 'Back', leagues_path %>

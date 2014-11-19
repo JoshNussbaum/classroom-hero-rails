@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @class_jar.total %>
+</p>
+
+<p>
+  <strong>Progress:</strong>
+  <%= @class_jar.progress %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @class_jar.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @class_jar.type %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @class_jar.uid %>
+</p>
+
+<%= link_to 'Edit', edit_class_jar_path(@class_jar) %> |
+<%= link_to 'Back', class_jars_path %>

@@ -1,0 +1,37 @@
+<%= form_for(@class_jar) do |f| %>
+  <% if @class_jar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@class_jar.errors.count, "error") %> prohibited this class_jar from being saved:</h2>
+
+      <ul>
+      <% @class_jar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :total %><br>
+    <%= f.number_field :total %>
+  </div>
+  <div class="field">
+    <%= f.label :progress %><br>
+    <%= f.number_field :progress %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.number_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.number_field :uid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

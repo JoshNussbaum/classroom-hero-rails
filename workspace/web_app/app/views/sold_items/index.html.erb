@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sold Items</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Uid</th>
+      <th>Iid</th>
+      <th>Tstamp</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sold_items.each do |sold_item| %>
+      <tr>
+        <td><%= sold_item.uid %></td>
+        <td><%= sold_item.iid %></td>
+        <td><%= sold_item.tstamp %></td>
+        <td><%= link_to 'Show', sold_item %></td>
+        <td><%= link_to 'Edit', edit_sold_item_path(sold_item) %></td>
+        <td><%= link_to 'Destroy', sold_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sold item', new_sold_item_path %>

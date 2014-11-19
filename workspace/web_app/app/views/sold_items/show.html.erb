@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @sold_item.uid %>
+</p>
+
+<p>
+  <strong>Iid:</strong>
+  <%= @sold_item.iid %>
+</p>
+
+<p>
+  <strong>Tstamp:</strong>
+  <%= @sold_item.tstamp %>
+</p>
+
+<%= link_to 'Edit', edit_sold_item_path(@sold_item) %> |
+<%= link_to 'Back', sold_items_path %>
