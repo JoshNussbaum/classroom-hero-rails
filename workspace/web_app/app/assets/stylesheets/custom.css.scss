@@ -41,7 +41,7 @@ header.splash {
 div.how-it-works-panel{
     top: -592px;
     background-size: cover;
-    background-color: blue;
+    background-color: white;
 }
 
 @media(min-width:768px) {
@@ -86,7 +86,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: black;
   width: 65vw;
   margin: 0 auto;
   line-height: 2;
@@ -162,4 +161,8 @@ footer {
       font-size: 20px;
     }
   }
+}
+
+#teacherVideos{
+  overflow-x:hidden;
 }
