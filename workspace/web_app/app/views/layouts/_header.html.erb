@@ -4,22 +4,29 @@
     <nav>
       <ul class="nav navbar-nav pull-right header">
   
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;
+">
           Sign up
         </button>
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;
+">
           Sign in
         </button>
         
         <div class="btn-group">
-            <button id ="helpButton" type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Help <span class="caret"></span></button>
-            <ul class="dropdown-menu" aria-labelledby="helpButton">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+            <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Support <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><%= link_to "Help Center", help_path %></li>
+                <li><%= link_to "About", about_path %></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><%= link_to "FAQs", contact_path %></li>
+
             </ul>
         </div>
+        
+        <button type="button" class="btn btn-link"  style="outline:none; text-decoration: none !important; color: white;">
+          My Account
+        </button>
       </ul>
     </nav>
     

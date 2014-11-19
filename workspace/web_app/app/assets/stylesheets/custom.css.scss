@@ -24,6 +24,7 @@ section {
   background-color:transparent;
 }
 
+
 header.splash {
     text-align: center;
     color: #fff;
@@ -49,8 +50,6 @@ div.how-it-works-panel{
     }
 }
 
-
-
 textarea {
   resize: vertical;
 }
@@ -68,15 +67,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
+
 h1 {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-  letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
   font-size: 30px;
-  width: 75vw;
+  width: 72vw;
   margin: 0 auto;
 }
 
@@ -88,7 +87,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: black;
-  width: 75vw;
+  width: 65vw;
   margin: 0 auto;
   line-height: 2;
 
@@ -106,12 +105,14 @@ p {
    position: relative;
    top: +7px;
 }
-
  
 .modal-body input{
    margin: 0 auto;
- }
- 
+}
+
+
+.modal-backdrop, .modal-backdrop.fade.in { background-color: rgba(0,0,0,0); }
+
 
 
 #logo {
@@ -131,6 +132,7 @@ p {
 }
 
 /* carousel */
+
 .carousel-caption{
     position:static;
     background-size:cover;
