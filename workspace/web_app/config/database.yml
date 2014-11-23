@@ -2,7 +2,8 @@
 # make sure postgres is in Gemfile 
 default: &default
   adapter: postgresql
-  username: ben
+  username: postgres
+  password: dbpass
   encoding: unicode
   pool: 5
   timeout: 5000
