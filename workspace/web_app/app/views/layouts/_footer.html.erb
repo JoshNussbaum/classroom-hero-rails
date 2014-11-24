@@ -1,9 +1,40 @@
-<footer class="footer">
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Support", help_path %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
-    </ul>
-  </nav>
+<footer class="text-center footer">
+	<hr style="height:1px;border:none;color:#000;background-color:#000;" />
+	<div class="col-md-4">
+	  <nav>
+	    <ul>
+	      <p> Company </p><br>
+	      <li><%= link_to "About",   about_path %></li>
+	      <li><%= link_to "Help", help_path %></li>
+	      <li><%= link_to "Privacy Policy", privacypolicy_path %></li>
+	      <li><%= link_to "Terms of Use", termsofuse_path %></li>
+
+	    </ul>
+	  </nav>
+  </div>
+
+  <div class="col-md-4">
+  	<ul>
+  		<li>
+  			<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+  		</li>
+
+  		<li>
+  			<div class="fb-like" data-href="https://www.facebook.com/ClassroomHeroHQ" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+  		</li>
+  	</ul>
+
+  </div>
+
+  <div class="col-md-4">
+	  <nav>
+	    <ul>
+	      <p> Discover </p><br>
+	      <li><%= link_to "Mobile",   about_path %></li>
+	      <li><%= link_to "Invite Friends", help_path %></li>
+	      <li><a href="http://news.railstutorial.org/">News</a></li>
+
+	    </ul>
+	  </nav>
+  </div>
 </footer>

@@ -145,20 +145,29 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
+  margin-top: 50px;
   padding-top: 5px;
+  min-height: 300px;
+
+  .col-md-4{
+    margin-bottom: 10px;
+  }
   a {
     &:hover {
     }
   }
   ul {
-    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
     list-style: none;
+    p {
+      font-size: 25px;
+      color: black;
+    }
     li {
+      margin-top: 8px;
       color: white;
-      float: right;
-      margin-right: 15px;
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 }
@@ -169,7 +178,7 @@ footer {
 
 
   h1{
-    padding-top: 50px;
+    padding-top: 40px;
   }
   h2{
     font-size: 200%;
