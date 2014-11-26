@@ -1,13 +1,5 @@
 <footer class="text-center footer">
 	<div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
 	<hr style="height:1px;border:none;color:#000;background-color:#000;" />
 	<div class="col-md-4">
@@ -25,13 +17,15 @@
 
   <div class="col-md-4">
   	<ul>
-  		<li>
-  			<div class="g-plusone" data-annotation="inline" data-width="300"></div>
-  		</li>
-
-  		<li>
-  			<div class="fb-like" data-href="https://www.facebook.com/ClassroomHeroHQ" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-  		</li>
+      <li>
+        <div style="font-size: 15px; color: black;">
+          Spread the word. Like or share us. 
+        </div>
+      </li><br>
+      <li>
+        <%= render_shareable :buttons=> ['facebook', 'twitter', 'google_plus', 'linkedin', 'reddit', 'pinterest'] %>
+      </li>
+      
   	</ul>
 
   </div>
