@@ -34,22 +34,46 @@
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
+          <form accept-charset="UTF-8" method="POST" action="/users">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             <h4 class="center modal-title" id="myModalLabel">Sign up</h4>
           </div>
           <div class="modal-body">
-            <input type="text" name="first_name" id="first_name"
+            <% if flash[:error] %>
+              <div class="alert alert-danger" role="alert">
+            <input type="text" name="fname" id="first_name"
 				  	class="center input form-control fields" placeholder="First Name"
 				  	style="max-width: 400px;"><br>
-				  	<input type="text" name="last_name" id="last_name"
+				  	<input type="text" name="lname" id="last_name"
 				  	class="center input form-control fields" placeholder="Last Name"
 				  	style="max-width: 400px;"><br>
+            <input type="text" name="email" id="user_email"
+            class="center input form-control fields" placeholder="Email"
+            style="max-width: 400px;"><br>
+            <input type="text" name="password" id="password"
+            class="center input form-control fields" placeholder="Password"
+            style="max-width: 400px;"><br>
+            <input type="text" name="password_confirmation" id="password_confirmation"
+            class="center input form-control fields" placeholder="Confirm Password"
+            style="max-width: 400px;"><br>
+            <label for="user_type_radios" style="text-align: center; display: block;">I am a:</label>
+            <div id="user_type_radios" class="center">
+              <label class="radio-inline" for="student_type">
+              <input type="radio" name="type" id="student_type"
+              class="center input radio-inline type-switch-r" value="student">Student<br>
+            </label>
+              <label class="radio-inline" for="teacher_type">
+              <input type="radio" name="type" id="teacher_type"
+              class="center input radio-inline type-switch-r" value="teacher">Teacher<br>
+            </label>
+            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class=" btn btn-primary">Sign up</button>
+            <input type="submit" id="btn-login" name="btn-login" class="btn btn-primary" value="Sign Up">
           </div>
+        </form>
         </div>
       </div>
     </div>
