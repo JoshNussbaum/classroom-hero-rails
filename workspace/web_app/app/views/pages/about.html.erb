@@ -6,16 +6,28 @@
     </head>
     <body>
         <div class="about-page">
-        	<div class="dashboard col-md-3">
+        	<div class="dashboard about-menu col-md-12">
+        		<div style="font-size: 30px; text-align: center;">
+        			Company
+        		</div>
+        	</div>
+        	<div class="dashboard col-md-4">
 	    		<div style="font-size: 30px;">
-	    			About Menu
+	    			About menu
 	    		</div>
+                <div class="sidenav">
+                    <ul class="sidenav-list">
+                        <li>
+                            <a class="sidenav-item" aria-selected="true" href="/about/company">About us </a>
+                        </li>
+                        <li> 
+                            <a class="sidenav-item" aria-selected="false" href="/about/founders">Founders </a>
+                        </li>
+                    </ul>
+                </div>
 	    	</div>
-
-	    	<div class="dashboard col-md-6">
-	    		<div style="font-size: 30px; text-align:center;">
-	    			Content
-	    		</div>
+	    	<div class="dashboard col-md-8">
+	    		<%= yield %>
 	    	</div>
 
         </div>
