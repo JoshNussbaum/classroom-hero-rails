@@ -172,7 +172,7 @@ footer {
   }
 }
 #infoBlobs{
-  overflow-x:hidden;
+  overflow:hidden;
 }
 
 .infoDescription{
@@ -180,10 +180,6 @@ footer {
   top: +200px;
 }
 
-.infoImg{
-  position: relative;
-  right: -80px;
-}
 
 
 /* How it works */
