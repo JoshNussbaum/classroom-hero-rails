@@ -16,6 +16,7 @@
 //= require bootstrap-modalmanager
 //= require dropdown
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery-ui
 //= require bootstrap-sprockets
