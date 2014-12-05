@@ -20,6 +20,10 @@ section {
   overflow: auto;
 }
 
+strong { 
+    font-weight: bold; 
+}
+
 .jumbotron{
   background-color:transparent;
 }
@@ -132,6 +136,11 @@ p {
 
 /* carousel */
 
+.carousel{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .carousel-caption{
     position:static;
     background-size:cover;
@@ -239,10 +248,12 @@ footer {
   min-height: 800px;
 }
 
-.page-header {
-padding-bottom: 9px;
-margin: 40px 0 20px;
-border-bottom: 1px solid #eee;
+.about-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 200%;
+  font-weight: bold;
 }
 
 
@@ -250,4 +261,169 @@ border-bottom: 1px solid #eee;
   margin-top: 20px;
 }
 
+/* Scroll Deck */
+
+#scrollsection{
+  min-height: 1200px;
+}
+
+.scrolldeck {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 500px;
+    height: 50rem;
+    padding: 100px 0 200px;
+    padding: 10rem 0 20rem;
+    text-align: center;
+}
+
+
+
+.or-block {
+  display: block;
+}
+
+#what1 {
+  padding: 80px 0 200px;
+  padding: 8rem 0 20rem;
+}
+
+#what1 p {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+#what2 {
+  padding: 150px 0 200px;
+  padding: 15rem 0 20rem;
+}
+
+#what2 strong {
+  display: block;
+  font-size: 60px;
+  font-size: 6rem;
+  font-style: italic;
+  position: relative;
+  top: 6px;
+  top: .6rem;
+  letter-spacing: 3px;
+  letter-spacing: .3rem;
+}
+
+#what3 {
+  padding: 120px 0 200px;
+  padding: 12rem 0 20rem;
+}
+
+#what4 h8 {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+#what4 strong {
+  display: block;
+  font-size: 60px;
+  font-size: 6rem;
+  padding-top: 12px;
+  padding-top: 1.2rem;
+}
+
+#what4 small {
+  display: block;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 24px;
+  padding-bottom: 2.4rem;
+}
+
+#what5 {
+  padding: 180px 0 200px;
+  padding: 18rem 0 20rem;
+}
+
+#what5 h8 {
+  font-size: 60px;
+  font-size: 6rem;
+  margin: 0;
+}
+
+#what5 p {
+  margin: 0;
+}
+
+
+
+
+/*------------------------  BASE-REM SIZING  */
+
+
+@media (min-width: 1401px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1400px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+  html {
+    font-size: 10px;
+  }
+}
+  
+@media (max-width: 1160px) {
+  html {
+    font-size: 9px;
+  }
+}
+  
+@media (max-width: 1040px) {
+  html {
+    font-size: 8px;
+  }
+}
+  
+@media (max-width: 920px) {
+  html {
+    font-size: 7px;
+  }
+}
+  
+@media (max-width: 800px) {
+  html {
+    font-size: 6px;
+  }
+}
+  
+@media (max-width: 680px) {
+  html {
+    font-size: 5px;
+  }
+}
+  
+@media (max-width: 560px) {
+  html {
+    font-size: 4px;
+  }
+}
+  
+@media (max-width: 440px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 3px;
+  }
+}
 

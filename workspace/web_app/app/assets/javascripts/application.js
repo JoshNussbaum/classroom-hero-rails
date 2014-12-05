@@ -16,6 +16,11 @@
 //= require bootstrap-modalmanager
 //= require dropdown
 //= require jquery
+//= require jquery-1.8.2.min
+//= require jquery.easing.1.3
+//= require jquery.scrolldeck
+//= require jquery.scrollorama
+//= require jquery.scrollTo-1.4.3.1.min
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require jquery-ui
