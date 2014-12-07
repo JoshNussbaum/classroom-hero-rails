@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    var deck = new $.scrolldeck();
 
     $("#how-it-works-btn").click(function(){
         if($(".how-it-works-panel").css("display") == "none"){
@@ -23,6 +22,10 @@ $(document).ready(function(){
         }
     });
 });
+
+$(document).onload=function(){
+  var deck = new $.scrolldeck();
+};
 
 $(function() {
   $('a[href*=#]:not([href=#]):not(.carousel-control)').click(function() {

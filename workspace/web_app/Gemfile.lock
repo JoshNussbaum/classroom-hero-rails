@@ -61,6 +61,9 @@ GEM
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    foundation-rails (5.1.1.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -122,14 +125,14 @@ GEM
       sass (~> 3.2)
       sprockets (~> 2.12)
       sprockets-rails (>= 2.0, < 4.0)
+    scrollreveal-rails (0.0.1)
+      railties (>= 3.1)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     shareable (1.1.4)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    simple-navigation (3.13.0)
-      activesupport (>= 2.3.2)
     slop (3.6.0)
     social-share-button (0.1.8)
       coffee-rails
@@ -169,15 +172,16 @@ DEPENDENCIES
   bootstrap-select-rails
   byebug
   coffee-rails (~> 4.1.0)
+  foundation-rails
   jbuilder (~> 2.0)
   jquery-rails (< 3.0.0)
   jquery-turbolinks
   pg
   rails (= 4.2.0.beta4)
   sass-rails (~> 5.0.0.beta1)
+  scrollreveal-rails
   sdoc (~> 0.4.0)
   shareable
-  simple-navigation
   social-share-button
   spring
   turbolinks
