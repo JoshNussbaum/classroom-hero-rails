@@ -1,17 +1,43 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit %>
+<form accept-charset="UTF-8" method="POST" action="/users" id="signup-form">
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <div class="modal-header">
+    <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+    <h4 class="center modal-title" id="myModalLabel">Sign up</h4>
   </div>
-<% end %>
+  <div class="modal-body">
+    <% if @user.errors.any? %>
+      <div class="center alert alert-danger user-errors" role="alert">
+        Whoops! <%= @user.errors.full_messages[0] %></div>
+    <% end %>
+    <input type="text" name="user[fname]" id="first_name"
+    class="center input form-control fields" placeholder="First Name"
+    style="max-width: 400px;"><br>
+    <input type="text" name="user[lname]" id="last_name"
+    class="center input form-control fields" placeholder="Last Name"
+    style="max-width: 400px;"><br>
+    <input type="text" name="user[email]" id="user_email"
+    class="center input form-control fields" placeholder="Email"
+    style="max-width: 400px;"><br>
+    <input type="password" name="user[password]" id="password"
+    class="center input form-control fields" placeholder="Password"
+    style="max-width: 400px;"><br>
+    <input type="password" name="user[password_confirmation]" id="password_confirmation"
+    class="center input form-control fields" placeholder="Confirm Password"
+    style="max-width: 400px;"><br>
+    <label for="user_type_radios" style="text-align: center; display: block;">I am a:</label>
+    <div id="user_type_radios" class="center">
+      <label class="radio-inline btn btn-primary" for="student_type" id="student_label">
+      <input type="radio" name="user[usertype]" id="student_type"
+      class="center input radio-inline type-switch-r" value="student" checked>Student<br>
+    </label>
+      <label class="radio-inline btn btn-default" for="teacher_type" id="teacher_label">
+      <input type="radio" name="user[usertype]" id="teacher_type"
+      class="center input radio-inline type-switch-r" value="teacher">Teacher<br>
+    </label>
+    </div>
+  </div>
+  <div class="form-footer center">
+    <input type="submit" id="btn-login" name="btn-login" class="btn btn-primary" value="Sign Up">
+  </div>
+</form>
