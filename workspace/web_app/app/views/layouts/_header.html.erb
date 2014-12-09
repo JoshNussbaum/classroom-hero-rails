@@ -3,14 +3,14 @@
     <%= link_to "Classroom Hero", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav pull-right header">
-  
+        <% if is_logged_in %>
         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
           Sign up
         </button>
         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">
           Sign in
         </button>
-        
+        <% end %>
         <div class="btn-group">
             <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Support <span class="caret"></span></button>
             <ul class="dropdown-menu">
@@ -28,35 +28,8 @@
       </ul>
     </nav>
     
-    <!-- Sign Up Modal -->
-    <%= render "layouts/sign_up_modal" %>
-    
-    <!-- Sign In Modal -->
-    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <form accept-charset="utf8" action="/login" method="post">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-              <h4 class="center modal-title" id="myModalLabel">Sign in</h4>
-            </div>
-            <div class="modal-body">
-              <input type="text" name="session[email]" id="session_email"
-  				  	class="center input form-control fields" placeholder="Email"
-  				  	style="max-width: 400px;"><br>
-  				  	<input type="password" name="session[password]" id="session_password"
-  				  	class="center input form-control fields" placeholder="Password"
-  				  	style="max-width: 400px;"><br>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
-              <input type="submit" name="commit" class=" btn btn-primary">Go</button>
-            </div>
-          </div>
-        </div>
-      </form> 
-    </div>
+    <%= render "layouts/sign_up_modal" %>    
+    <%= render "layouts/sign_in_modal" %>
+
   </div>
 </header>
