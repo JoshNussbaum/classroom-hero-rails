@@ -3,8 +3,9 @@
     <%= link_to "Classroom Hero", root_url, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav pull-right header">
-  
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
+        <%= link_to "Pricing", pricing_url, {:style=>'outline:none; text-decoration: none !important; color: white; position: relative; top: +9px; left: -13px;'} %>
+
+        <button type="button" class="btn btn-link headerButtons" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
           Sign up
         </button>
         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">

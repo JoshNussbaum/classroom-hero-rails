@@ -30,10 +30,7 @@ Rails.application.routes.draw do
   get 'contact' => 'pages#contact'
   get 'privacypolicy' => 'pages#privacypolicy'
   get 'termsofuse' => 'pages#termsofuse'
-
-  get 'company' => 'about#company'
-
-  get 'founders' => 'about#founders'
+  get 'pricing'=> 'pages#pricing'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

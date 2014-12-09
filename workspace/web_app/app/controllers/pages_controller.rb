@@ -18,4 +18,7 @@ class PagesController < ApplicationController
   def termsofuse
   end
 
+  def pricing
+  end
+
 end

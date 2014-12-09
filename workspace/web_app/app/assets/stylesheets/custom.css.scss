@@ -43,6 +43,12 @@ header.splash {
     
 }
 
+.headerButtons{
+  outline: none;
+  text-decoration: none !important;
+  color: white;
+}
+
 div.how-it-works-panel{
     top: -592px;
     background-size: cover;
@@ -97,9 +103,18 @@ h2 {
 
 }
 
+h3 {
+  font-weight: bold;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 2;
+}
+
 p {
-  font-size: 20px;
-  line-height: 1;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 
@@ -224,6 +239,8 @@ footer {
 
 #teacherVideos{
   overflow-x:hidden;
+  position: relative;
+  top: -80px;
 }
 
 
@@ -255,6 +272,7 @@ footer {
   border-bottom: 1px solid #eee;
   font-size: 200%;
   font-weight: bold;
+  
 }
 
 

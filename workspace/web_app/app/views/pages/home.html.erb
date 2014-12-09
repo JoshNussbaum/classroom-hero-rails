@@ -9,25 +9,25 @@
     <body>
 
 
-    <div class="center how-it-works-panel"style="display:none">
+    <div class="center how-it-works-panel"style="display: none; margin: 0 auto; ">
       <button type="button" id="closeDropDown" class="btn btn-default" aria-label="Left Align" style="float: right; margin-right: 1%; margin-top: 1%;">
         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
       </button><br>
       <h1>Get started</h1>
       <hr style="height:1px;border:none;color:#000;background-color:#000;" />
       <h2 style="color:blue;">Register students with SnowShoe Stamps</h2>
-      <h3>Buy stamps or order a free test kit from <a href="http://beta.snowshoestamp.com/#order">SnowShoe</a></h3><br>
+      <h3>Buy stamps, order a free test-kit from <a href="http://beta.snowshoestamp.com/#order">SnowShoe</a>, or <%= link_to "Contact us", contact_path %> about a free one month trial with enough SnowShoe stamps for your whole class. </h3><br>
 
-      <h2 style="color:blue;">Create positive-actions and items</h2>
-      <h3>Positive actions are behaviors or initiatives that students should be rewarded for in class. Items can be privileges or physical tokens</h3><br>
+      <h2 style="color:blue;">Get ready for class</h2>
+      <h3>Create positive actions you want to see repeated, like "Volunteer to read" and award students points for completing these actions. Set up items such as, "Homework pass" to sell to students for their points. </h3><br>
 
       <h2 style="color:blue;">Let the stamping begin!</h2><br>
-      <h3>Reinforce positive actions by having students stamp the treasure chest and claim coins</h3><br>
+      <h3>Simply have students stamp the treasure chest and claim coins</h3><br>
       <hr style="height:1px;border:none;color:#000;background-color:#000;" />
       <button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#signUpModal" style="outline:none">
         Sign up now!
       </button>
-      <%= link_to "Learn more", 'help_url', class: "btn btn-md btn-primary" %>
+      <%= link_to "Learn more", help_url, class: "btn btn-md btn-primary" %>
 
       <h1></h1>
     </div>
@@ -67,7 +67,7 @@
               <div class="item">
                 <div class="carousel-caption">
                     <br><h2>Motivate a generation of learners with technology that will increase participation and engagement</h2><br>
-                    <%= link_to "Learn more", 'help_url', class: "btn btn-sm btn-primary" %>
+                    <%= link_to "Learn more", help_url, class: "btn btn-sm btn-primary" %>
                 </div>
               </div>
               <div class="item">
@@ -93,19 +93,14 @@
 
     </header>
     <div  id="scrollsection">
-      <div class="col-md-12" style="text-align: center;">
-        <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 300px;">
+      <div class="col-md-12" style="text-align: center; position: relative; top: +50px; margin-bottom: 50px;">
+        <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 360px;">
           <%= scroll_reveal(content: 'Scroll down to see how Classroom Hero works', animation: 'enter top over 1.0s') %>
-          <div class="small-2 large-4 columns">
-            <%= scroll_reveal(animation: "enter top over 1.0s" ) do %>
-              <%= image_tag 'stamp.png' %>
-            <% end %>
-          </div>
         </div>
 
   
 
-        <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 200px; margin-bottom: 50px;"><%= scroll_reveal(content: 'Award students points for positive actions', animation: 'enter top over 1.0s') %></div><br><br>
+        <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 200px; margin-bottom: 25px;"><%= scroll_reveal(content: 'Award students points for positive actions', animation: 'enter top over 1.0s') %></div><br><br>
 
 
         <div class="row">
@@ -113,34 +108,51 @@
             <%= scroll_reveal(animation: "enter bottom, over .5s" ) do %>
               <%= image_tag 'rewardscreen.png' %>
             <% end %>
-            <div class="small-2 large-4 columns" style="position: relative; top: -285px; left: -18px">
-              <%= scroll_reveal(animation: "enter bottom, and move 350px after .3s" ) do %>
+            <div class="small-2 large-4 columns" style="position: relative; top: -290px; left: -17px">
+              <%= scroll_reveal(animation: "enter bottom, and move 350px after .7s" ) do %>
                 <%= image_tag 'stamp.png' %>
               <% end %>
             </div>
           </div>
 
-          <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 50px;"><%= scroll_reveal(content: 'Sell items and privileges to students for their hard-earned points', animation: 'enter top over 1.0s') %></div><br><br>
+          <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 25px;"><%= scroll_reveal(content: 'Sell items and privileges to students for their hard-earned points', animation: 'enter top over 1.0s') %></div><br><br>
          
           <div class="small-2 large-4 columns">
           <%= scroll_reveal(animation: "enter top, over .5s" ) do %>
               <%= image_tag 'sellscreen.png' %>
             <% end %>
           </div>
-          <div class="small-2 large-4 columns" style="position: relative; top: -285px; left: -5px">
-            <%= scroll_reveal(animation: "enter bottom, and move 350px after .3s" ) do %>
+          <div class="small-2 large-4 columns" style="position: relative; top: -292px; left: -5px">
+            <%= scroll_reveal(animation: "enter bottom, and move 350px after .7s" ) do %>
               <%= image_tag 'stamp.png' %>
             <% end %>
           </div>
 
+          <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 25px;"><%= scroll_reveal(content: 'Add points to a classroom jar to keep every student engaged!', animation: 'enter top over 1.0s') %></div><br><br>
+
+          <div class="small-2 large-4 columns">
+          <%= scroll_reveal(animation: "enter top, over .5s" ) do %>
+              <%= image_tag 'jarscreen.png' %>
+            <% end %>
+          </div>
+          <div class="small-2 large-4 columns" style="position: relative; top: -285px; left: -5px">
+            <%= scroll_reveal(animation: "enter bottom, and move 350px after .7s" ) do %>
+              <%= image_tag 'stamp.png' %>
+            <% end %>
+
+          </div>
+          <hr style="height:1px;border:none;color:#000;background-color:#000;" />
+
+
         </div>
-      </div<
+      </div>
       
     </div>
 
-    <section id="teacherVideos">
+    <div class="row">
       <div class="row text-center promoVideos">
         <div class="col-md-6">
+          <div id="teacherVideos"></div>
           <iframe src="//www.youtube.com/embed/bJ4EFh7oWJc" width="380" height="300" scrolling="no" webkitallowfullscreen mozallowfullscreen>
           </iframe>
         </div>
@@ -167,7 +179,7 @@
           </iframe>
         </div>
       </div>
-    </section>
+    </div>
     <hr style="height:1px;border:none;color:#000;background-color:#000;" />
 
     <div class="row">
