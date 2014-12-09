@@ -8,8 +8,134 @@
     </head>
     <body>
 
+      <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand" href="index.html"><span><%= image_tag 'ch-logo.png',  height: '40', width: '40', margin: '10'%> Classroom Hero</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-    <div class="center how-it-works-panel"style="display:none">
+    <!-- Header Carousel -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <%= image_tag 'stamps.jpg', :class => "fill" %>
+
+                <h1>Taking digital reward systems to a whole new level</h1>
+            </div>
+
+            <div class="item">
+                <%= image_tag 'boy2.png', :class => "fill" %>
+            </div>
+            <div class="item">
+              <%= image_tag 'girl1.png', :class => "fill" %>
+             
+            </div>
+            <div class="item">
+              <%= image_tag 'boy1.png', :class => "fill" %>
+          
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </div>
+
+
+   <!--  <div class="center how-it-works-panel"style="display:none">
       <button type="button" id="closeDropDown" class="btn btn-default" aria-label="Left Align" style="float: right; margin-right: 1%; margin-top: 1%;">
         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
       </button><br>
@@ -32,21 +158,22 @@
       <h1></h1>
     </div>
 
-    <header class="splash">
+<header class="splash">
       <div class="center jumbotron">
           <h1>Classroom Hero is an interactive token economy</h1><br>
           <a class="btn btn-md btn-info" id="how-it-works-btn">Get started</a><br>
             
+
             
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
+         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+             Indicators 
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
               <li data-target="#carousel-example-generic" data-slide-to="1"></li>
               <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
            
-            <!-- Wrapper for slides -->
+             Wrapper for slides 
             <div class="carousel-inner">
               <div class="item active">
                 <div class="carousel-caption">
@@ -79,7 +206,7 @@
               </div>
             </div>
            
-            <!-- Controls -->
+             Controls ss
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
               <span class="glyphicon glyphicon-chevron-left"></span>
             </a>
@@ -87,28 +214,30 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
             
-          </div> 
-          <!-- Carousel -->
-      </div>
+          </div>
+          Carousel 
+      </div> 
 
     </header>
     <div  id="scrollsection">
       <div class="col-md-12" style="text-align: center;">
         <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 350px;">
           <%= scroll_reveal(content: 'Scroll down to see how Classroom Hero works', animation: 'enter top over 1.0s') %>
-        </div>
+        </div>         
+      </div>
 
+        </header>-->
   
 
         <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 200px; margin-bottom: 30px;"><%= scroll_reveal(content: 'Award students points for positive actions', animation: 'enter top over 1.0s') %></div><br><br>
 
 
         <div class="row">
-          <div class="small-2 large-4 columns">
+          <div class="small-4 large-4 columns screens">
             <%= scroll_reveal(animation: "enter bottom, over .5s" ) do %>
-              <%= image_tag 'rewardscreen.png' %>
+              <%= image_tag 'rewardscreen.png'%>
             <% end %>
-            <div class="small-2 large-4 columns" style="position: relative; top: -290px; left: -15px">
+            <div class="small-2 large-4 columns" style="position: relative; top: -290px; left:50px;">
               <%= scroll_reveal(animation: "enter bottom, and move 350px after .6s" ) do %>
                 <%= image_tag 'stamp.png' %>
               <% end %>
@@ -117,7 +246,7 @@
 
           <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 30px;"><%= scroll_reveal(content: 'Sell items and privileges to students for their hard-earned points', animation: 'enter top over 1.0s') %></div><br><br>
          
-          <div class="small-2 large-4 columns">
+          <div class="small-2 large-4 columns screens">
           <%= scroll_reveal(animation: "enter top, over .5s" ) do %>
               <%= image_tag 'sellscreen.png' %>
             <% end %>
@@ -129,9 +258,13 @@
           </div>
 
 
-          <div class="small-4 large-4 columns" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 30px;"><%= scroll_reveal(content: 'Add points to a classroom jar to keep the whole class motivated!', animation: 'enter top over 1.0s') %></div><br><br>
+          <div class="small-4 large-4 columns screens" style="font-size: 25px; color: black; margin-top: 50px; margin-bottom: 30px;">
+            <%= scroll_reveal(content: 'Add points to a classroom jar to keep the whole class motivated!', animation: 'enter top over 1.0s') %>
+          </div>
+          <br>
+          <br>
          
-          <div class="small-2 large-4 columns">
+          <div class="small-2 large-4 columns screens">
           <%= scroll_reveal(animation: "enter top, over .5s" ) do %>
               <%= image_tag 'jarscreen.png' %>
             <% end %>
@@ -144,8 +277,7 @@
           <hr style="height:1px;border:none;color:#000;background-color:#000;" />
 
         </div>
-      </div>
-    </div>
+
 
 
     <div class="row" style="margin-bottom: 50px; margin-top: 50px;">

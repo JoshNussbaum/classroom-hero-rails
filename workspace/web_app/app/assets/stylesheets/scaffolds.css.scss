@@ -4,6 +4,7 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  overflow-y: hidden;
 }
 
 p, ol, ul, td {
@@ -67,3 +68,33 @@ div {
     list-style: square;
   }
 }
+
+.screens{
+  margin: 0 auto;
+  width:20%;
+}
+
+.screenText{
+  margin: 0 auto;
+}
+
+
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+.item{
+    background: #333;    
+    text-align: center;
+    height: 600px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+  margin: 20px;
+}
+
