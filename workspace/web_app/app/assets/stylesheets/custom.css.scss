@@ -8,13 +8,11 @@ $gray-medium-light: #00CCFF;
 
 /* universal */
 
-html {
-}
 
-body {
-  overflow-y: scroll;
-  padding-top: 50px;
-  overflow: hidden;
+
+html body {
+  overflow-x: hidden;
+  padding-top: 40px;
 }
 
 section {
@@ -180,8 +178,8 @@ input.type-switch-r {
 
 footer {
   margin-top: 50px;
-  padding-top: 5px;
   min-height: 300px;
+  margin-bottom: 20px;
 
   .col-md-4{
     margin-bottom: 10px;
@@ -260,8 +258,9 @@ footer {
 }
 
 .twitterTimeline{
+  padding-top: 42px;
   float: right;
-  min-height: 1000px;
+  min-height: 1800px;
 }
 
 .dashboard{

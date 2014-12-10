@@ -2,7 +2,7 @@
   <div class="container">
     <%= link_to "Classroom Hero", root_path, id: "logo" %>
     <nav>
-      <ul class="nav navbar-nav pull-right header">
+      <ul class="nav navbar-nav pull-right header" style="padding-right: 80px;">
         <%= link_to "Pricing", pricing_url, {:style=>'outline:none; text-decoration: none !important; color: white; position: relative; top: +9px; left: -13px;'} %>
         <% if not is_logged_in %>
           <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
