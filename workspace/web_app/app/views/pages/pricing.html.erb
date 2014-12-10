@@ -1,1 +1,43 @@
-Pricing page
+<% provide(:title, "Pricing") %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= yield(:title) %>| Classroom Hero</title>
+    </head>
+    <body>
+        <br><h3 class="text-center">Pricing</h3>
+        <div class="row" style="max-width: 20%; margin: 0 auto;">
+        	<hr>
+        </div>
+
+        <div class="row" style="max-width: 50%; margin: 0 auto;">
+        	<div class="col-md-12 text-center">
+        		<div style="text-transform: uppercase; font-size: 18px; font-weight: bold; margin-bottom: 30px; margin-top: 15px;"> We have a plan to fit your classroom and budget</div>
+        		<p> Order a <a href="http://beta.snowshoestamp.com/#order">free test-kit</a> from SnowShoe to test the stamps with the application. After deciding you want the stamps, contact us to discuss our flexible pricing options.
+        	</div>
+        </div>
+
+        <div class="row" style="background-color: lightgray; margin-top: 50px; min-height: 300px;">
+        	<div class="col-md-4 col-md-offset-2 text-center">
+        		<div style="text-transform: uppercase; font-size: 18px; font-weight: bold; margin-bottom: 30px; margin-top: 15px; color: blue"> Option 1
+        		</div>
+        		<p> Some amazing option</p>
+
+        	</div>
+
+        	<div class="col-md-4 text-center">
+        		<div style="text-transform: uppercase; font-size: 18px; font-weight: bold; margin-bottom: 30px; margin-top: 15px; color: blue"> Option 2
+        		</div>
+        		<p> Some amazing option</p>
+        		
+        	</div>
+        </div>
+
+        <div class="row">
+        	<div class="col-md-12 text-center" style="margin-top: 50px;">
+        		<p> Interested in a free trial, or purchasing stamps? Contact us today!</p>
+                <%= link_to "Contact us", contact_url, class: "btn btn-md btn-primary" %>
+
+
+    </body>
+</html>
