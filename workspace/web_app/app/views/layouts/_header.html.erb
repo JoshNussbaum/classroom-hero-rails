@@ -5,12 +5,19 @@
       <ul class="nav navbar-nav pull-right header">
         <% if not is_logged_in %>
           <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
-            Sign up
+            Sign Up
           </button>
           <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">
-            Sign in
+            Sign In
           </button>
         <% else %>
+          <form method="POST" action="/logout" style="display: inline;">
+            <input type="hidden" name="_method" value="DELETE" />
+            <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+            <button type="submit" class="btn btn-link"  style="display: inline; outline: none; text-decoration: none !important; color: white;" >
+              Log Out
+            </button>
+          </form>
           <button type="button" class="btn btn-link"  style="outline:none; text-decoration: none !important; color: white;">
             My Account
           </button>
