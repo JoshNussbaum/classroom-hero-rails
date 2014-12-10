@@ -29,6 +29,11 @@ strong {
   background-color:transparent;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+}
+
 
 header.splash {
     text-align: center;
@@ -248,16 +253,29 @@ footer {
 /* Help Page */
 
 .help-page{
-  min-height: 800px;
 }
 
 .twitterTimeline{
   float: right;
-  min-height: 800px;
+  min-height: 1000px;
 }
 
 .dashboard{
   margin-top: 20px;
+}
+
+.question {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.answer {
+  font-size: 18px;
+  margin-bottom: 60px;
+
 }
 
 /* About Page */
