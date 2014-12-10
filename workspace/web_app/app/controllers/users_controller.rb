@@ -25,21 +25,22 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    @data = nil
-    if user_params[:usertype] == 'student'
+
+    if user_params[:usertype] == 'teacher' 
       @data = TeacherUser.new
-      @user.user_category_type = 'student'
-      @user.user_category_id = @student.id
-    
-    elsif user_params[:usertype] == 'teacher' 
-      @data = StudentUser.new
+      @data.save
       @user.user_category_type = 'teacher'
-      @user.user_category_id = @teacher.id
+      @user.user_category_id = @data.id
+
+    else 
+      @data = StudentUser.new
+      @data.save
+      @user.user_category_type = 'student'
+      @user.user_category_id = @data.id
     
     end
 
-
-    if @user.save && @data.save
+    if @user.save 
       respond_to do |format|
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
