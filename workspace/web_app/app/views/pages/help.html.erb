@@ -5,22 +5,85 @@
         <title><%= yield(:title) %> | Classroom Hero</title>
     </head>
     <body>
-	    <div class="help-page">
-	    	<div class="dashboard col-md-3">
-	    		<div style="font-size: 30px;">
-	    			Help Center Menu
+	    <div class="container">
+	    	<div class="dashboard col-md-9 text-center">
+	    		<div style="font-size: 32px; font-weight: bold; ">
+	    			FAQ
+	    			<hr>
 	    		</div>
-	    	</div>
+	    		<div class="col-md-6 col-md-offset-3 text-center">
 
-	    	<div class="dashboard col-md-6">
-	    		<div style="font-size: 30px; text-align:center;">
-	    			Content
+		    		<div class="question"> 
+	    				How do I order stamps?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> or test two stamps for free from <a href="http://beta.snowshoestamp.com/#order">SnowShoe</a>
+	    			</div>
+
+	    			<div class="question"> 
+	    				What do I do with the stamps?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I add Students?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I register Students?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I award points?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				What should I do if the stamp is not responding?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				What should I do if the wrong student appears on the screen?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				What should I do if a students stamp is not working?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
+	    			<div class="question"> 
+	    				If I need new stamps, what should I do?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contact_path %> 
+	    			</div>
+
 	    		</div>
-	    	</div>
+			</div>
+
 	        <div class="twitterTimeline col-md-3">
 	        	<a class="twitter-timeline"  href="https://twitter.com/ClassroomHeroHQ" data-widget-id="537197085322264578">Tweets by @ClassroomHeroHQ</a>
             	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		    </div>
+		</div>
 	    </div>
     </body>
 </html>
