@@ -27,16 +27,20 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if user_params[:usertype] == 'teacher' 
-      @data = TeacherUser.new
-      @data.save
+      data = TeacherUser.new
+      data.save
       @user.user_category_type = 'teacher'
-      @user.user_category_id = @data.id
+      @user.user_category_id = data.id
 
     else 
-      @data = StudentUser.new
-      @data.save
+      data = StudentUser.new
+      data.totalcoins = 0
+      data.currentcoins = 0
+      data.progress = 0
+      data.lvl = 1
+      data.save
       @user.user_category_type = 'student'
-      @user.user_category_id = @data.id
+      @user.user_category_id = data.id
     
     end
 
