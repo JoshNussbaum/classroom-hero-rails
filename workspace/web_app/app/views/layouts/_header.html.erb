@@ -3,13 +3,17 @@
     <%= link_to "Classroom Hero", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav pull-right header">
-        <% if is_logged_in %>
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
-          Sign up
-        </button>
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">
-          Sign in
-        </button>
+        <% if not is_logged_in %>
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
+            Sign up
+          </button>
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">
+            Sign in
+          </button>
+        <% else %>
+          <button type="button" class="btn btn-link"  style="outline:none; text-decoration: none !important; color: white;">
+            My Account
+          </button>
         <% end %>
         <div class="btn-group">
             <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Support <span class="caret"></span></button>
@@ -22,9 +26,7 @@
             </ul>
         </div>
         
-        <button type="button" class="btn btn-link"  style="outline:none; text-decoration: none !important; color: white;">
-          My Account
-        </button>
+
       </ul>
     </nav>
     
