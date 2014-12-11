@@ -125,6 +125,8 @@ ActiveRecord::Schema.define(version: 20141126024801) do
     t.string   "stamp",           limit: 80
     t.string   "email",           limit: 200
     t.boolean  "isActivated"
+    t.integer  "user_category_id"
+    t.string   "user_category_type"
     t.string   "type"
   end
 
