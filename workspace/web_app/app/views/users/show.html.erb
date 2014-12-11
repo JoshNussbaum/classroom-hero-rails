@@ -1,4 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<% if current_user.user_category_type == 'student' %>
+	<%= render 'student_lihome' %>
+<% end %>
+<% if current_user.user_category_type == 'teacher' %>
+	<%= render 'teacher_lihome' %>
+<% end %> 
+
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

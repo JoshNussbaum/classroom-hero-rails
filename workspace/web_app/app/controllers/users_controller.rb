@@ -10,6 +10,10 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    if not is_logged_in
+      flash[:error] = "You are not logged in! Please log in to access this page."
+      redirect_to login_path
+    end
   end
 
   # GET /users/new
