@@ -32,6 +32,7 @@ strong {
     width: 100%;
 }
 
+.hidden { display: none; }
 
 header.splash {
     text-align: center;
@@ -468,3 +469,52 @@ footer {
   }
 }
 
+/* Contact Page */
+
+#contact_name {
+  position: relative;
+  right: -37px;
+}
+#contact_email {
+  position: relative;
+  right: -37px;
+}
+
+#contact_message {
+  position: relative;
+  right: -25px;
+  resize: none;
+}
+
+
+/*flash*/
+
+.alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: left;
+}
+
+.alert-alert {
+  margin-top: 50px;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: center;
+}
+
+.alert-notice {
+  margin-top: 50px;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+  text-align: left;
+}
