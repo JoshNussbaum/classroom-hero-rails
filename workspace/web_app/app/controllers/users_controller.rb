@@ -14,6 +14,14 @@ class UsersController < ApplicationController
       flash[:error] = "You are not logged in! Please log in to access this page."
       redirect_to login_path
     end
+    if @user.nil?
+      @user = User.find(params[:id])
+    end
+    if current_user.id == @user.id
+      render 'show'
+    else
+      render "not_allowed"
+    end
   end
 
   # GET /users/new
@@ -49,6 +57,7 @@ class UsersController < ApplicationController
     end
 
     if @user.save 
+      log_in(@user)
       respond_to do |format|
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
