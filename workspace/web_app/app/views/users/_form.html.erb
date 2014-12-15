@@ -7,7 +7,7 @@
   </div>
   <div class="modal-body">
     <% if @user.errors.any? %>
-      <div class="center alert alert-danger user-errors" role="alert">
+      <div class="center alert alert-danger ch-alert" role="alert">
         Whoops! <%= @user.errors.full_messages[0] %></div>
     <% end %>
     <input type="text" name="user[fname]" id="first_name"

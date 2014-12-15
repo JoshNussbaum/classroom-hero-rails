@@ -1,5 +1,31 @@
-<p>Welcome back, <%= current_user.fname.humanize %>!</p>
-<p>You currently have <%= user_data.currentcoins %> coins.</p>
-<p>You have earned a total of <%= user_data.totalcoins %> coins since you started playing Classroom Hero.</p>
-<p>You are currently a level <%= user_data.lvl %>.</p>
+<div id="user-avatar" class="center">
+	<img class="user-avatar"></img>
 
+</div>
+<div id="user_heading">
+	<span class="user_human_name"><%= current_user.fname.humanize %> <%= current_user.lname.humanize %></span>
+</div>
+<div id="profile_info">
+	<div id="user_basic_info">
+
+	</div>
+
+	<div id="user_level_info">
+		<ul class="">
+			<li id="user_level">
+				<span id="lvl_tag">Level</span>
+				<span id="level_num"><%= user_data.lvl %></span>
+			</li>
+			<li id="user_coins">
+				<span class="">Current coins</span>
+				<span class="coins_num"><%= user_data.currentcoins %></span>
+				<span class="">total coins</span>
+				<span class="coins_num"><%= user_data.totalcoins %></span>
+			</li>
+
+		</ul>
+	</div>
+
+	<div id="user_metrics">
+	</div>
+</div>
