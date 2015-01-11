@@ -1,0 +1,86 @@
+<% provide(:title, "Help") %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= yield(:title) %> | Classroom Hero</title>
+    </head>
+    <body>
+	    <div class="container">
+	    	<div class="dashboard col-md-9 text-center">
+	    		<div style="font-size: 32px; font-weight: bold; ">
+	    			FAQ
+	    			<hr>
+	    		</div>
+	    		<div class="col-md-6 col-md-offset-3 text-center">
+
+	    			<div class="question"> 
+	    				What are SnowShoe Stamps?
+	    			</div>
+	    			<div class="answer">
+	    				Small pieces of plastic with digital identities. Students and teachers stamp the Classroom Hero application to get points, buy items, or add to a class jar. 
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I get started?
+	    			</div>
+	    			<div class="answer">
+	    				Create and set up your account, download the application, distribute the stamps, and let the fun begin!  If you do not see your school listed when creating an account, <%= link_to "contact us", contacts_path %> about becoming part of the team. Once logged in, add students, positive reinforcers, items, and a class jar reward to your account. 
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I order stamps?
+	    			</div>
+	    			<div class="answer">
+	    				Order stamps by <%= link_to "contacting us", contacts_path %> with your school and classroom information, or order two free stamps from <a href="http://beta.snowshoestamp.com/#order">SnowShoe</a> to test the application.
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I register students?
+	    			</div>
+	    			<div class="answer">
+	    				Add students online then log in to the application and you will automatically see the register students screen if you have any to register. Swipe to the correct student, and use an unassigned SnowShoe stamp to register the student.  
+	    			</div>
+
+	    			<div class="question"> 
+	    				How do I award points?
+	    			</div>
+	    			<div class="answer">
+	    				Once students demonstrate a positive action that is already defined in the application such as, "Volunteer to read", have the student stamp the Reward Screen to claim coins for his positive behavior! 
+	    			</div>
+
+	    			<div class="question"> 
+	    				What should I do if the stamp is not responding?
+	    			</div>
+	    			<div class="answer">
+	    				Stamping works best with multitasking gestures disabled. Disable multitasking gestures at Settings -> Multitasking Gestures.
+
+	    				Make sure your device has a strong internet connection, as the application does not work offline.  
+
+	    			</div>
+
+	    			<div class="question"> 
+	    				What should I do if a students stamp is not working?
+	    			</div>
+	    			<div class="answer">
+	    				If a student is having trouble stamping the screen, try unregistering and re-registering that student. Unregister a student on his student page from the student list. The student list is accessible from the Students on the Home Screen, and the student page is accessed by clicking the student name in the list.
+	    			</div>
+
+	    			<div class="question"> 
+	    				If I need new stamps, what should I do?
+	    			</div>
+	    			<div class="answer">
+	    				<%= link_to "Contact us", contacts_path %> about ordering more stamps. 
+	    			</div>
+
+	    		</div>
+			</div>
+
+	        <div class="twitterTimeline col-md-3">
+	        	<a class="twitter-timeline"  href="https://twitter.com/ClassroomHeroHQ" data-widget-id="537197085322264578">Tweets by @ClassroomHeroHQ</a>
+            	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		    </div>
+		</div>
+	    </div>
+    </body>
+</html>
+

@@ -1,0 +1,45 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "Classroom Hero", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav pull-right header" style="padding-right: 80px;">
+        <% if not is_logged_in %>
+          <%= link_to "Pricing", pricing_url, {:style=>'outline:none; text-decoration: none !important; color: white; position: relative; top: +9px; left: -13px;'} %>
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signUpModal" style="outline:none; text-decoration: none !important; color: white;">
+            Sign Up
+          </button>
+          <button type="button" class="btn btn-link" data-toggle="modal" data-target="#signInModal" style="outline:none; text-decoration: none !important; color: white;">
+            Sign In
+          </button>
+        <% else %>
+          <form method="POST" action="/logout" style="display: inline;">
+            <input type="hidden" name="_method" value="DELETE" />
+            <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+            <button type="submit" class="btn btn-link"  style="display: inline; outline: none; text-decoration: none !important; color: white;" >
+              Log Out
+            </button>
+          </form>
+          
+          <button type="button" class="btn btn-link"  style="outline:none; text-decoration: none !important; color: white;">
+            My Account
+          </button>
+        <% end %>
+        <div class="btn-group">
+            <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">Support <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><%= link_to "Help Center", help_url %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Contact", contacts_path %></li>
+
+            </ul>
+        </div>
+        
+
+      </ul>
+    </nav>
+    
+    <%= render "layouts/sign_up_modal" %>    
+    <%= render "layouts/sign_in_modal" %>
+
+  </div>
+</header>

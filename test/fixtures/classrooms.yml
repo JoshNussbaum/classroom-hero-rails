@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grade: 1
+  tid: 1
+  room: 1
+  classlvl: 1
+  classProgress: 1
+  nextLvl: 1
+  schoolName: MyString
+
+two:
+  grade: 1
+  tid: 1
+  room: 1
+  classlvl: 1
+  classProgress: 1
+  nextLvl: 1
+  schoolName: MyString

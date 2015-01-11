@@ -1,0 +1,23 @@
+<form accept-charset="utf8" action="/login" method="post">
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <div class="modal-header">
+    <h4 class="center modal-title" id="myModalLabel">Sign in</h4>
+  </div>
+  <div class="modal-dialog"> 
+    <% if flash[:error] %>
+      <div class="center alert alert-danger user-errors" role="alert"><%= flash[:error] %></div>
+    <% end %>
+      <div class="modal-body">
+        <input type="text" name="session[email]" id="session_email"
+		  	class="center input form-control fields" placeholder="Email"
+		  	style="max-width: 400px;"><br>
+		  	<input type="password" name="session[password]" id="session_password"
+		  	class="center input form-control fields" placeholder="Password"
+		  	style="max-width: 400px;"><br>
+      </div>
+      <div class="form-footer center">
+        <input type="submit" name="commit" class=" btn btn-primary" value="Log in"/>
+      </div>
+  </div>
+</form> 

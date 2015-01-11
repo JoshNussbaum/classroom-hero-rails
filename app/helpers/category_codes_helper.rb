@@ -1,0 +1,2 @@
+module CategoryCodesHelper
+end

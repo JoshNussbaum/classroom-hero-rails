@@ -1,0 +1,45 @@
+<footer class="text-center footer">
+	<div id="fb-root"></div>
+
+	<hr style="height:1px;border:none;color:#000;background-color:#000;" />
+	<div class="col-md-4">
+	  <nav>
+	    <ul>
+	      <p> Company </p>
+	      <li><%= link_to "About",   about_path %></li>
+	      <li><%= link_to "Help", help_path %></li>
+	      <li><%= link_to "Contact", contacts_path %></li>
+	      <li><%= link_to "Privacy Policy", privacypolicy_path %></li>
+
+	    </ul>
+	  </nav>
+  </div>
+
+  <div class="col-md-4">
+  	<ul>
+      <li>
+        <div style="font-size: 15px; color: black;">
+          Spread the word. Like or share us. 
+        </div>
+      </li><br>
+      <li>
+        <%= render_shareable :turbolinks => true, :buttons=> ['facebook', 'twitter', 'google_plus', 'linkedin'] %>
+      </li><br><br>
+      	Copyright &copy; Classroom Hero 2014
+
+  	</ul>
+
+  </div>
+
+  <div class="col-md-4">
+	  <nav>
+	    <ul>
+	      <p> Social </p>
+	      <li><a href="https://www.facebook.com/ClassroomHeroHQ?ref=br_tf">Facebook</a></li>
+	      <li><a href="https://twitter.com/ClassroomHeroHQ">Twitter</a></li>
+	      <li><a href="http://beta.snowshoestamp.com/">SnowShoe Stamps</a></li>
+
+	    </ul>
+	  </nav>
+  </div>
+</footer>

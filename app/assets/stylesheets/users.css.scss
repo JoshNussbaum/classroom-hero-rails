@@ -1,0 +1,113 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ch-alert {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-footer {
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#page-contents {
+	position: relative;
+	padding-top: 5vh;
+	width: 67%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 68vh;
+}
+
+#user-avatar {
+	width: 200px;
+	height: 200px;
+	display: block;
+	position: absolute;
+}
+
+.user-avatar {
+	position: relative;
+	background-color: #EEE;
+	border: 1px solid #AAA;
+	display: block;
+	height: 200px;
+	width: 200px;
+	padding: 100px;
+	position: relative;
+}
+
+#user_heading {
+	position: relative;
+	left: 200px;
+	margin-left: 10px;
+	border-bottom: 1px solid #6c6d6a;
+	width: inherit;
+	display: block;
+}
+
+span.user_human_name {
+	font: bold "Lucida Grande", Verdana, Arial, sans-serif; 
+	font-size: 2em;
+}
+
+#profile_info {
+	display: table;
+}
+
+#user_basic_info {
+	display: table-cell;
+	position: relative;
+	width: 400px;
+}
+
+#user_level_info {
+	display: table-cell;
+	border-left: 1px dotted #BCBCBC;
+	border-right: 1px dotted #BCBCBC;
+	width: 175px;
+	left: 400px;
+}
+
+#user_level_info li {
+	padding-top: 20px;
+	text-transform: uppercase;
+
+}
+
+#user_level_info span {
+	display: block;
+}
+
+#user_level {
+}
+
+#lvl_tag {
+}
+
+#level_num {
+	color: #A00;
+	font-size: 6em;
+	text-align: center;
+}
+
+.coins_num {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+#user_level_info ul {
+	list-style: none outside none;
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#user_metrics {
+	display: table-cell;
+}

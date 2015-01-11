@@ -1,0 +1,12 @@
+<div id="page-contents">
+	<% if notice %>
+		<div class="alert alert-success center ch-alert" id="notice" role="alert" style="max-width: 600px">
+			<%= notice %></div>
+	<% end %>
+	<% if current_user.user_category_type == 'student' %>
+		<%= render 'student_lihome' %>
+	<% end %>
+	<% if current_user.user_category_type == 'teacher' %>
+		<%= render 'teacher_lihome' %>
+	<% end %> 
+</div>
